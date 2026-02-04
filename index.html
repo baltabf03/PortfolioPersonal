@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="static/styles.css">
+        <title>Portfolio Web! - Baltazar Bustos Fierro Medina</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <section id="indice">
+                    <a href="#inicio">Inicio /</a>
+                    <a href="#about">Sobre Mi /</a>
+                    <a href="#proyectos">Proyectos /</a>
+                    <a href="#contactos">Contacto /</a>
+                    <a href="#referencias">Referencias y Calificaciones /</a>
+                </section>
+            </nav>
+        </header>
+
+        <main>
+
+
+            <section id="inicio">
+                <h1>Baltazar Bustos Fierro Medina</h1>
+                <br>
+                <br>
+                <br>
+                <h3>Estudiante de Licenciatura en Sistemas de la Informacion</h3>
+                <br>
+                <p>
+                    Hola! Este es mi portfolio web.
+                    <br>Soy Baltazar Bustos Fierro Medina, tengo 22 años y soy estudiante de 3ero de la carrera de LSI en la FCEyN de la Universidad Nacional de San Juan.
+                </p>
+                <br>
+                <br>
+                <br>
+            </section>
+
+
+            <section id="about">
+                <h1>Sobre Mi\About Me</h1>
+                <br>
+                <br>
+                <p> Soy una persona muy interesada por la tecnologia y el mundo digital, 
+                    desde que era chico, <br>siempre estuve de una u otra forma relacionado con computadoras, consolas y ultimas tecnologias
+                    en el mercado. A continuacion, se podran ver distintos proyectos personales que realice.
+                </p>
+                <br>
+                <br>
+                <div class="container-imagen">
+                    <img src="img/MiPic.jpg" width="20%" height="20%" alt="Mi foto" class="imagen-centrada">
+                </div>
+                <br>
+                <br>
+                <br>
+            </section>
+
+
+            <section id="proyectos">
+                <h1>Proyectos</h1>
+                <br>
+                <article>
+                    <h3>Aplicacion para el Registro de Horarios</h3>
+                    <p>
+                        Esta es una aplicacion Flask hecha con SQLAlchemy que permite realizar registros tanto de entrada como de salidas al horario laboral
+                        de trabajadores cuyos datos se encuentran en una DB.<br> Tambien permite visualizar todos los registros de un determinado
+                        trabajador desde una fecha a otra.
+                    </p>
+                    <a href="http://127.0.0.1:5000/" target="_blank">
+                        <img src="img/ControlRyH.png" width="25%" height="25%" alt="Aplicacion Flask para el Registro de Horarios" class="imagenes-proyectos"><br>
+                    </a>
+                </article>
+                <br>
+                <article class="extra">
+                    <h3>Pagina para estudio juridico</h3>
+                    <p>
+                        Este es un proyecto que actualmente esta en desarrollo, lo estoy llevando a cabo solo, para el estudio juridico de un familiar.
+                        Entre las funcionalidades con las que contara estan: 
+                    </p>
+                    <div>
+                        <ol class="listado-ordenado">
+                            <li>Booking para consultas por medio de un calendario</li>
+                            <li>Informacion de contacto como Whatsapp o Gmail</li>
+                        </ol>
+                    </div>
+                    <a href="http://127.0.0.1:5500/" target="_blank">
+                        <img src="img/EstudioJur.png" width="25%" height="25%" alt="Pagina Estudio Juridico" class="imagenes-proyectos"><br>
+                    </a>
+                </article>
+                <article class="extra">
+                    <h3>Futuro Proyecto</h3>
+                    <p>
+                        Proximamente... solo en cines
+                    </p>
+                </article>
+                <button id="boton-Ver_Mas">Ver mas</button>
+                <br>
+            </section>
+
+            <section id="contactos">
+                <h1>Contacto</h1>
+                <br>
+                <a href="mailto:balbf2018@gmail.com"target="_blank">
+                    <img src="img/Gmail.jpg" width="8%" height="8%" alt="Mi Correo">
+                </a>
+                <a href="https://wa.me/+542645689138" target="_blank">
+                    <img src="img/Whatsapp.jpg" width="5%" height="5%" alt="Mi Whatsapp">
+                </a>
+                <h3>Contactame!</h3>
+                <form id="datos-form" onsubmit="verificar_form(); return false;">
+                    <label for="Numero">Numero de Telefono</label>
+                    <br>
+                    <br>
+                    <input type="number" name="numero" placeholder="Tu Telefono">
+                    <br>
+                    <br>
+                    <label for="Nombre">Nombre y Apellido</label>
+                    <br>
+                    <br>
+                    <input type="text" name="nya" placeholder="Tu Nombre Y Apellido">
+                    <br>
+                    <br>
+                    <label for="Correo">Correo Electronico</label>
+                    <br>
+                    <br>
+                    <input type="email" name="email" placeholder="Tu Correo">
+                    <br>
+                    <br>
+                    <input class="boton-form" type="submit" value="Enviar">
+                    <br>
+                    <br>
+                </form>
+                <div id="datos-guardados"></div>
+            </section>
+
+            <section id="referencias">
+                <h1>Referencias y Calificaciones</h1>
+                <br>
+                <br>
+                <blockquote class="extra">
+                    <p>Gracias por donarme el pulmon. Sos un grande</p>
+                    <footer>Esteban Quito</footer>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>Un joven muy carismatico, gran persona 10/10</p>
+                    <footer>Armando Paredes</footer>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>Me saco de mis peores momentos</p>
+                    <footer>Susana Horia</footer>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </blockquote>
+                <br>
+                <button id="boton-Ver_Testimonios" class>Ver Mas</button>
+                <br>
+            </section>
+        </main>
+        <button id="boton-indice">⬆</button>
+        <footer id="fecha-actual"></footer>
+        <script src="script.js"></script>
+    </body>
+</html>

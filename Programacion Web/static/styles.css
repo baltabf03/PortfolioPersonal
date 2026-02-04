@@ -1,0 +1,198 @@
+body{
+    margin: 0; padding: 0; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('../ImagenFondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+a{
+    color: rgb(221,223, 240);
+    border:  rgb(203, 196, 196);
+    text-decoration: double;
+    text-align: center;
+}
+
+li{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(221,223, 240);
+}
+
+form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    padding: 5px;
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+input{
+    padding: 5px 20px;
+    background-color: rgb(105, 197, 233);
+    border: 5px solid black;
+    text-align: left;
+}
+
+footer{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.imagenes-proyectos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    border: 3px solid black;
+}
+
+.imagen-centrada{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid black;
+}
+
+.boton-form{
+    cursor: pointer;
+}
+
+.extra{
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.extra.mostrar{
+    max-height: 500px;
+    opacity: 1;
+}
+
+.listado-ordenado{
+    display: grid;
+    place-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+#indice{
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#inicio{
+    border-bottom: 5px solid black;
+}
+
+#about{
+    border-bottom: 5px solid black;
+}
+
+#proyectos{
+    border-bottom: 5px solid black;
+}
+
+#contactos{
+    border-bottom: 5px solid black;
+    text-align: center;
+}
+
+#referencias{
+    border-bottom: 2px solid black;
+}
+
+#boton-indice{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: black;
+    border: solid whitesmoke;
+    border-radius: 50%;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    transition: 0.3s ease;
+    z-index: 99;
+    outline: none;
+}
+
+#boton-Ver_Mas{
+    display: block;
+    margin: auto;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: black;
+    border: solid whitesmoke;
+    border-radius: 50%;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#boton-Ver_Testimonios{
+    display: block;
+    margin: auto;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: black;
+    border: solid whitesmoke;
+    border-radius: 50%;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#fecha-actual{
+    text-shadow: 2px 2px 5px black;
+    color: white;
+    text-align: center;
+}
+
+#referencias blockquote footer{
+    text-align: center;
+}

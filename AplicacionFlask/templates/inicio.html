@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nuevo Horizonte</title>
+        <link rel="stylesheet" href="{{url_for('static', filename= 'css/estilos.css')}}">
+    </head>
+    <body>
+        <h1>Control de Registros y Horarios</h1>
+        <ul>
+            <div class="enlaces-container">
+                <br><li><a href="{{url_for('registrar_entrada')}}" class="enlaces-container">Registrar Entrada</a></li><br><br>
+                <br><li><a href="{{url_for('registrar_salida')}}" class="enlaces-container">Registrar Salida</a></li><br><br>
+               <br> <li><a href="{{url_for('consultar_horario_propio')}}" class="enlaces-container">Consultar Registros</a></li><br><br>
+            </div>
+        </ul>
+    </body>
+</html>

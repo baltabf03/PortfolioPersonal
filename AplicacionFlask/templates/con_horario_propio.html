@@ -1,0 +1,16 @@
+{% extends "base_template.html" %}
+{% block title %}Formulario de Consulta de horarios{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+        <form method="post" class="container">
+            <label for="legajo">Legajo</label><br>
+            <input type="number" name="legajo" placeholder="Legajo" /><br>
+            <label for="dni">Ultimos 4 digitos del DNI</label><br>
+            <input type="text" name="dni" maxlenght="4" placeholder="Ultimos 4 digitos"><br>
+            <label for="fecha_in">Indique fecha de inicio del periodo de consulta</label><br>
+            <input type="date" name="fecha_in"><br>
+            <label for="fecha_fn">Indique fecha de fin del periodo de consulta</label><br>
+            <input type="date" name="fecha_fn"><br>
+            <input type="submit" value="Consultar">
+        </form>
+{% endblock %}

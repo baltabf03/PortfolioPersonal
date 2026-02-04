@@ -1,0 +1,12 @@
+{% extends "base_template.html" %}
+{% block title %}Registro de Salida{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+        <form method="post" class="container">
+            <label for="legajo">Legajo</label><br>
+            <input type="number" name="legajo" placeholder="Legajo" /><br>
+            <label for="dni">Ultimos 4 digitos del DNI</label><br>
+            <input type="text" name="dni" maxlenght="4" placeholder="Ultimos 4 digitos"><br>
+            <input type="submit" value="Registrar Salida">
+        </form>
+{% endblock %}

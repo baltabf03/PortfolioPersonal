@@ -1,0 +1,19 @@
+{% extends "base_template.html" %}
+{% block title %}Registro de Entrada{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+        <form method="post" class="container">
+        <label for="legajo">Legajo</label><br>
+        <input type="number" name="legajo" placeholder="Legajo" /><br>
+        <label for="dni">Ultimos 4 digitos del DNI</label><br>
+        <input type="text" name="dni" maxlenght="4" placeholder="Ultimos 4 digitos"><br>
+        <label for="dependencia">Seleccione la dependencia</label><br>
+        <select name="dep" id="dep" class="dropdown-container">
+            <option value="">Elegir</option>
+            <option value="D01">Edificio Central</option>
+            <option value="D02">Talleres</option>
+            <option value="D03">Centro Deportivo</option>
+        </select> <br> <br>
+        <input type="submit" value="Registrar Entrada">
+        </form>
+{% endblock %}

@@ -1,0 +1,24 @@
+body{
+    margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; 
+    color: black;}
+
+header{ background-color: darkgreen; height: 10%; width: 100%; opacity: .9; margin-bottom: 2%;}
+
+h1{ font-family: 'Times New Roman', Times, serif; text-align: center; color: black; background-color: yellowgreen;}
+
+p{font-family: Arial, Helvetica, sans-serif; text-align: center; color: black; background-color:yellowgreen;}
+
+body{background-color: yellow;}
+
+a{text-align: center;text-decoration: none; color: black;}
+
+li{text-align: center;text-decoration: none; color: black;}
+
+.container{padding-top: 2%; width: 50%; margin: 0 auto; background-color:yellowgreen; text-align: center;}
+
+.container label{font-weight: bold; margin-bottom: 2em; margin-left: 2em; color: black;}
+.container input{margin-bottom: 1em; margin-left: 2em;}
+.container button{margin-bottom: 1em; margin-left: 2em;}
+.container textarea{min-height: 12em; resize: vertical;}
+.dropdown-container{ position: relative; /* Permite posicionar el menú desplegable */; display: inline-block /* Se adapta al contenido */;}
+select{width: 200px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: white; color: #333;} /*Estilo de la lista desplegable*/

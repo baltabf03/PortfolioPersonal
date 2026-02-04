@@ -1,0 +1,16 @@
+{% extends "base_template.html" %}
+{% block title %}Listado de Registro de Horarios{% endblock %}
+{% block content %}
+<!DOCTYPE html>
+<body>
+    <h1>ID Trabajador: {{id}}</h1><br>
+    {% for registro in registros %}
+        <div class="container">
+        <br><p>Fecha: {{registro.fecha}}</p>
+        <p>Hora Entrada: {{registro.horaentrada}}</p>
+        <p>Hora Salida: {{registro.horasalida}}</p>
+        <p>Dependencia: {{registro.dependencia}}</p><br>
+        </div>
+    {% endfor %}
+</body>
+{% endblock %}
